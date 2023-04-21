@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+header, footer, nav {display: block;}
+
+html, body {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    background-color: #d8d8d8;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+hr {
+    background: #93c1f0;
+    size: 3px;
+}
+
+
+header{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    margin: 20px;
+}
+.form__login{
+    padding: 8px 24px;
+   
+    color: #ffff;
+ 
+    background-color: #488835;
+    border-radius: 25px;
+    
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: flex-start;
+    
+}
+.form__menu{
+    color:rgb(131, 131, 131);
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.form {
+    background-color: #ffff;
+    
+    border-radius: 4px;
+    display: block;
+    
+    height: 1000px;
+    padding: 40px;
+    width: 1200px;
+    
+}
+.form__body{
+    display: flex;
+    
+    justify-content:space-between;
+    
+}
+.form__bodyContent{
+    background-color: #d1d1d14b;
+    
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    width: 300px;
+    height: 100%;
+    align-self:stretch;
+}
+.form__bodyContent p{
+    text-align: left;
+     color: #000000bb;
+}
+.form__bC1{
+    flex-direction: column;
+    text-align: left;
+    color: #000000da;
+    display: flex;
+    justify-content:space-around;
+    width: 80%;
+    margin: 30px;
+}
+
+footer.form__w {
+        display: flex;
+        background-color: rgb(212, 212, 212);
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-self:flex-end;
+}
+.form__w p {
+    text-align: center;
+} 
