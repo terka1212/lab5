@@ -1,23 +1,26 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+
 header, footer, nav {display: block;}
 
 html, body {
     display: flex;
     font-family: "roboto", sans-serif;
     font-size: 16px;
-    background-color: #d8d8d8;
-    margin: 0;
+    background-color: #6d6d6d;
     
     padding: 0;
-    align-items: center;
+    margin: 0;
     justify-content: center;
     
 }
-
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    width: 1000px;
+    height: 1000px;
+    background-color: #e4e4e4;
+}
 hr {
     background: #93c1f0;
     size: 3px;
@@ -26,51 +29,38 @@ hr {
 
 header{
     display: flex;
-    background-color: #ffffff;
+    background-color: #949494;
     justify-content: space-between;
   
-    flex: 0 0 auto;
+    height: 50px;
 }
 .form__login{
     display: inline-flex;
     justify-content: flex-start;
-    padding: 8px 24px;
-   
-    color: #ffff;
+    align-items:center;
+    padding: 20px;
+    width: 100px;
+    justify-content: center;
+    color: #ffffff;
  
     background-color: #488835;
     border-radius: 25px;
     
-    border: 1px solid #ffffff;
-    cursor: pointer;
-    
+    border: 1px solid #488835;
+   
     
     
 }
 .form__menu{
     display: inline-flex;
-    color:rgb(131, 131, 131);
-    
+    color:rgb(97, 97, 97);
+    align-items:center;
     justify-content: flex-end;
     width: 100%;
     
 }
-.no-wrap {
-    display: inline-flex;
-    flex-wrap: nowrap;
-}
-.form {
-    display: inline-flexbox;
-    background-color: #ffff;
-    
-    border-radius: 4px;
-   
-    
-    height: 1000px;
-    padding: 40px;
-    width: 1500px;
-    
-}
+
+
 .form__body{
     display: flex;
     flex: 1 0 auto;
@@ -79,16 +69,16 @@ header{
 }
 .form__bodyContent{
     display: inline-flex;
-    background-color: #d1d1d14b;
+    background-color: #8686864b;
     
     border-radius: 4px;
    
     justify-content: flex-start;
     flex-direction: column;
     padding: 40px;
-    width: 300px;
-    height: 100%;
-    align-self:stretch;
+    width: 20%;
+    height: 40%;
+
 }
 .form__bodyContent p{
     text-align: left;
@@ -100,24 +90,108 @@ header{
     text-align: left;
     color: #000000da;
     
-    justify-content:space-around;
+    justify-content:center;
     width: 80%;
     margin: 30px;
 }
-.form__bC1 img{ width:100%; height:auto}
+.form__bC1 img{ width:50%; height:auto}
 footer.form__w {
     
         display: flex;
-        background-color: rgb(212, 212, 212);
-        width: 100%;
-        height: 50px;
+        align-items:center;
         justify-content: center;
         align-self:flex-end;
-        flex: 0 0 auto;
+        background-color: rgb(212, 212, 212);
+        width: 100%;
+        height: 80px;
+        margin: 0;
+       
 }
 .form__w p {
     text-align: center;
 } 
+p {
+    font-size: 16px;
+}
 @media (max-width: 1200px){
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        background-color: #949494;
+        justify-content: center;
+        
+        height: 25px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        width: 100%;
+        background-color: #e4e4e4;
+    }
+.form__bodyContent{
+    display: flex;
+    background-color: #8686864b;
+    
+    border-radius: 4px;
+    flex-direction: column;
    
+    
+    padding: 40px;
+    width: 20%;
+    height: 40%;
+   
+}
+.form__bC1{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: #000000da;
+    justify-content:flex-start;
+    
+    width: 80%;
+    margin: 30px;
+}
+p {
+    font-size: 10px;
+}
+.form__login{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 3px 10px;
+    justify-content: center;
+    color: #3d3d3d;
+    margin: 0;
+    background-color: #488835;
+    border-radius: 25px;
+    
+    border: 1px solid #488835;
+    cursor: pointer;
+    
+    
+    
+}
+span{
+    font-size: 10px;
+}
+footer.form__w {
+    
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    align-self:flex-end;
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: 4%;
+    
+    margin: 0;
+}
+h1{
+    font-size: 12px;
+}
+
+.form__bC1 img{ width:60%; height:auto}
 }
